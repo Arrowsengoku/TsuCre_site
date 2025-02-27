@@ -102,6 +102,7 @@ export default function About() {
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-20 h-20 rounded-full overflow-hidden">
+                    console.log("画像のパス:", index === 0 ? "/oya.jpg" : "/yui.jpg");
                     <Image
                       src={index === 0 ? "/oya.jpg" : "/yui.jpg"}
                       alt={member.name}
