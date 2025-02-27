@@ -1,62 +1,86 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-// Resend の初期化
+// Resend APIキーを環境変数から取得
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(req: Request) {
+export async function POST(request: Request) {
   try {
-    const { email } = await req.json();
+    const body = await request.json();
+    const { email } = body;
 
     if (!email) {
-      return NextResponse.json({ error: 'Email is required' }, { status: 400 });
+      return NextResponse.json(
+        { error: 'メールアドレスが必要です' },
+        { status: 400 }
+      );
     }
 
-    // メール送信の設定
-    const emailsToSend = [
-      // 登録者への感謝メール
-      {
-        to: email,
-        from: 'noreply@tsucre.com', // 送信元アドレス（カスタムドメイン推奨）
-        subject: 'Welcome to TsuCre Newsletter!',
-        text: `Thank you for subscribing to the TsuCre newsletter!
-You'll be the first to know about:
-- Latest product updates
-- Exclusive tester opportunities
-- Special events and announcements
+    // 管理者（あなた）へ通知メール
+    const adminMsg = {
+      from: 'no-reply@tsucre.com', // Resendで認証した送信元アドレス
+      to: 'tsukurou0801@gmail.com', // 受信者（管理者）
+      subject: '【TsuCre】新しいニュースレター登録！',
+      text: `新しい購読者が登録されました: ${email}`,
+      html: `<p>新しい購読者が登録されました: <strong>${email}</strong></p>`,
+    };
 
-Best regards,
-The TsuCre Team`,
-        html: `
-          <h3>Welcome to TsuCre Newsletter!</h3>
-          <p>Thank you for subscribing to the TsuCre newsletter!</p>
-          <p>You'll be the first to know about:</p>
-          <ul>
-            <li>Latest product updates</li>
-            <li>Exclusive tester opportunities</li>
-            <li>Special events and announcements</li>
-          </ul>
-          <p>Best regards,<br>The TsuCre Team</p>
-        `,
-      },
+    // 登録者への歓迎メール（日本語版）
+    const subscriberMsg = {
+      from: 'no-reply@tsucre.com', // Resendで認証した送信元アドレス
+      to: email,
+      subject: 'TsuCreメルマガへようこそ！🎮',
+      text: `
+こんにちは！
+TsuCreメルマガにご登録いただき、ありがとうございます！✨
 
-      // 管理者への通知メール
-      {
-        to: 'tsukurou0801@gmail.com',
-        from: 'noreply@tsucre.com',
-        subject: 'New Newsletter Subscription',
-        text: `New subscriber: ${email}`,
-        html: `<p>A new user has subscribed to the TsuCre newsletter:</p>
-               <p><strong>Email:</strong> ${email}</p>`,
-      },
-    ];
+これから、あなたに最新情報をいち早くお届けします！
 
-    // すべてのメールを送信
-    await Promise.all(emailsToSend.map((msg) => resend.emails.send(msg)));
+📢 こんな情報をお届け！
+✅ 新商品の開発進捗や最新アップデート
+✅ 限定テスター募集のお知らせ
+✅ 特別イベントやお得なキャンペーン情報
 
-    return NextResponse.json({ success: true }, { status: 200 });
+ぜひ楽しみにしていてくださいね！🎉
+
+何か気になることがあれば、お気軽にご連絡ください！
+
+🎮 TsuCre チームより
+      `,
+      html: `
+<h3>🎮 TsuCreメルマガへようこそ！</h3>
+<p>こんにちは！</p>
+<p>TsuCreメルマガにご登録いただき、ありがとうございます！✨</p>
+<p>これから、あなたに <strong>最新情報</strong> をいち早くお届けします！</p>
+
+<h4>📢 こんな情報をお届け！</h4>
+<ul>
+  <li>✅ 新商品の開発進捗や最新アップデート</li>
+  <li>✅ 限定テスター募集のお知らせ</li>
+  <li>✅ 特別イベントやお得なキャンペーン情報</li>
+</ul>
+
+<p>ぜひ楽しみにしていてくださいね！🎉</p>
+
+<p>何か気になることがあれば、お気軽にご連絡ください！</p>
+
+<p>🎮 <strong>TsuCre チームより</strong></p>
+      `,
+    };
+
+    // 両方のメールを送信
+    await Promise.all([
+      resend.emails.send(adminMsg),
+      resend.emails.send(subscriberMsg),
+    ]);
+
+    return NextResponse.json({ success: true });
   } catch (error) {
-    console.error('Resend API Error:', error);
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    console.error('Resend API エラー:', error);
+    return NextResponse.json(
+      { error: 'Internal Server Error' },
+      { status: 500 }
+    );
   }
 }
+
