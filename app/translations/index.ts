@@ -65,26 +65,6 @@ export const translations = {
             title: "HAKOBUNE STARTUP CONTEST 3rd Batch",
             award: "参加"
           },
-          {
-            year: "2025",
-            title: "TOHOKU STARTUP BIOTOPE PITCH DAY",
-            award: "登壇"
-          },
-          {
-            year: "2025",
-            title: "Polar Bear Pitching TOKYO",
-            award: "2位"
-          },
-          {
-            year: "2025",
-            title: "Delight Pitch(DeNA、Delight Ventures共催)",
-            award: "登壇"
-          },
-          {
-            year: "2025",
-            title: "Hult Prize On Campus Contest(Tohoku University)",
-            award: "2位"
-          }
         ],
       },
     },
@@ -92,6 +72,27 @@ export const translations = {
       hero: {
         title: 'T2411',
         subtitle: 'プロの評価より、自分にとって最高のコントローラーを。',
+      },
+    },
+    contact: {
+      title: 'お問い合わせ',
+      validation: 'すべての項目を入力してください',
+      success: 'お問い合わせを受け付けました。2営業日以内にご連絡いたします。',
+      error: 'エラーが発生しました。しばらく経ってからお試しください。',
+      form: {
+        name: {
+          label: 'お名前',
+          placeholder: '山田 太郎',
+        },
+        email: {
+          label: 'メールアドレス',
+          placeholder: 'your@email.com',
+        },
+        message: {
+          label: 'メッセージ',
+          placeholder: 'お問い合わせ内容をご記入ください',
+        },
+        submit: '送信する',
       },
     },
     footer: {
@@ -165,26 +166,6 @@ export const translations = {
             title: "HAKOBUNE STARTUP CONTEST 3rd Batch",
             award: "Participant"
           },
-          {
-            year: "2025",
-            title: "TOHOKU STARTUP BIOTOPE PITCH DAY",
-            award: "Presenter"
-          },
-          {
-            year: "2025",
-            title: "Polar Bear Pitching TOKYO",
-            award: "2nd Place"
-          },
-          {
-            year: "2025",
-            title: "Delight Pitch (DeNA & Delight Ventures)",
-            award: "Presenter"
-          },
-          {
-            year: "2025",
-            title: "Hult Prize On Campus Contest (Tohoku University)",
-            award: "2nd Place"
-          }
         ],
       },
     },
@@ -194,11 +175,30 @@ export const translations = {
         subtitle: 'Beyond pro standards, designed for you.',
       },
     },
+    contact: {
+      title: 'Contact Us',
+      validation: 'Please fill in all fields',
+      success: 'Thank you for your message. We will respond within 2 business days.',
+      error: 'An error occurred. Please try again later.',
+      form: {
+        name: {
+          label: 'Name',
+          placeholder: 'John Doe',
+        },
+        email: {
+          label: 'Email',
+          placeholder: 'your@email.com',
+        },
+        message: {
+          label: 'Message',
+          placeholder: 'Please enter your message',
+        },
+        submit: 'Send',
+      },
+    },
     footer: {
       rights: '© 2025 TsuCre. All rights reserved.',
       privacy: 'Privacy Policy',
     },
   },
 };
-
-
