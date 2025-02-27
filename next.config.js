@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,  
   experimental: {
     esmExternals: false, // モジュールの解決を調整
   },
@@ -11,4 +14,3 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
-
