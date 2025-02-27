@@ -14,14 +14,6 @@ const nextConfig = {
     config.cache = false;
     return config;
   },
-  async rewrites() {
-    return [
-      {
-        source: "/api/:path*",
-        destination: "/.netlify/functions/:path*",
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;
