@@ -73,6 +73,13 @@ export const translations = {
         title: 'T2411',
         subtitle: 'プロの評価より、自分にとって最高のコントローラーを。',
       },
+      newsletter: {
+        placeholder: 'メールアドレスを入力',
+        button: '登録する',
+        validation: 'メールアドレスを入力してください',
+        success: '登録が完了しました！',
+        error: 'エラーが発生しました。しばらく経ってからお試しください。',
+      },
     },
     contact: {
       title: 'お問い合わせ',
@@ -173,6 +180,13 @@ export const translations = {
       hero: {
         title: 'T2411',
         subtitle: 'Beyond pro standards, designed for you.',
+      },
+      newsletter: {
+        placeholder: 'Enter your email',
+        button: 'Subscribe',
+        validation: 'Please enter your email address',
+        success: 'Successfully subscribed!',
+        error: 'An error occurred. Please try again later.',
       },
     },
     contact: {
