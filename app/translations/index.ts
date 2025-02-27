@@ -47,6 +47,46 @@ export const translations = {
           },
         ],
       },
+      achievements: {
+        title: '実績',
+        items: [
+          {
+            year: "2024",
+            title: "TOKIOテラス 学生ピッチコンテスト",
+            award: "優勝"
+          },
+          {
+            year: "2024",
+            title: "東北大学ビジネスアイデアコンテスト",
+            award: "最優秀賞・ものづくり部門賞"
+          },
+          {
+            year: "2024~2025",
+            title: "HAKOBUNE STARTUP CONTEST 3rd Batch",
+            award: "参加"
+          },
+          {
+            year: "2025",
+            title: "TOHOKU STARTUP BIOTOPE PITCH DAY",
+            award: "登壇"
+          },
+          {
+            year: "2025",
+            title: "Polar Bear Pitching TOKYO",
+            award: "2位"
+          },
+          {
+            year: "2025",
+            title: "Delight Pitch (DeNA & Delight Ventures)",
+            award: "登壇"
+          },
+          {
+            year: "2025",
+            title: "Hult Prize On Campus Contest (Tohoku University)",
+            award: "2位"
+          }
+        ],
+      },
     },
     home: {
       hero: {
@@ -115,6 +155,46 @@ export const translations = {
           },
         ],
       },
+      achievements: {
+        title: 'Achievements',
+        items: [
+          {
+            year: "2024",
+            title: "TOKIO Terrace Student Pitch Contest",
+            award: "Winner"
+          },
+          {
+            year: "2024",
+            title: "Tohoku University Business Idea Contest",
+            award: "Grand Prize & Manufacturing Division Award"
+          },
+          {
+            year: "2024~2025",
+            title: "HAKOBUNE STARTUP CONTEST 3rd Batch",
+            award: "Participant"
+          },
+          {
+            year: "2025",
+            title: "TOHOKU STARTUP BIOTOPE PITCH DAY",
+            award: "Presenter"
+          },
+          {
+            year: "2025",
+            title: "Polar Bear Pitching TOKYO",
+            award: "2nd Place"
+          },
+          {
+            year: "2025",
+            title: "Delight Pitch (DeNA & Delight Ventures)",
+            award: "Presenter"
+          },
+          {
+            year: "2025",
+            title: "Hult Prize On Campus Contest (Tohoku University)",
+            award: "2nd Place"
+          }
+        ],
+      },
     },
     home: {
       hero: {
@@ -136,3 +216,4 @@ export const translations = {
     },
   },
 };
+
