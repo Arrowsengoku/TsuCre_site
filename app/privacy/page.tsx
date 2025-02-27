@@ -20,7 +20,7 @@ export default function Privacy() {
           <h1 className="text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
             {t.privacy.title}
           </h1>
-          <p>{t.privacy.sections.intro}</p>
+          <p>{t.privacy.sections.content}</p>
           <section className="mb-8">
             <h2>{t.privacy.sections.companyInfo.title}</h2>
             <ul>
