@@ -17,7 +17,7 @@ export async function POST(req: Request) {
       // 登録者への感謝メール
       {
         to: email,
-        from: 'no-reply@tsucre.com', // 送信元アドレス（カスタムドメイン推奨）
+        from: 'noreply@tsucre.com', // 送信元アドレス（カスタムドメイン推奨）
         subject: 'Welcome to TsuCre Newsletter!',
         text: `Thank you for subscribing to the TsuCre newsletter!
 You'll be the first to know about:
@@ -43,7 +43,7 @@ The TsuCre Team`,
       // 管理者への通知メール
       {
         to: 'tsukurou0801@gmail.com',
-        from: 'no-reply@tsucre.com',
+        from: 'noreply@tsucre.com',
         subject: 'New Newsletter Subscription',
         text: `New subscriber: ${email}`,
         html: `<p>A new user has subscribed to the TsuCre newsletter:</p>
