@@ -79,6 +79,22 @@ TsuCre お問い合わせ窓口
         title: 'Vision',
         text: 'Creating a world where everyone can express their creativity in their own way',
       },
+      credo:{
+        title: 'Credo',
+        items: [
+          {
+            title: 'Create what you want',
+            description: 'What you want is what the customer wants.',
+          },
+          {
+            title: 'Be crazy',
+            description: 'Act boldly and embrace passion.',
+          },
+          {
+            title: 'Done is better than perfect',
+            description: 'Take action instead of seeking perfection.',
+          },
+        ],
     },
     home: {
       hero: {
