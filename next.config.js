@@ -1,17 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: { 
-    unoptimized: true, // Netlifyでは next/image の最適化を無効化
+  experimental: {
+    esmExternals: false, // モジュールの解決を調整
   },
-  // Enable optimization features
-  compress: true,
-  poweredByHeader: false,
-  reactStrictMode: true,
-  // Simplified webpack config to avoid caching issues
   webpack: (config) => {
-    config.cache = false;
+    config.externals = config.externals || [];
+    config.externals.push('resend'); // 例: 'resend' を外部モジュールとして扱う
     return config;
   },
 };
 
 module.exports = nextConfig;
+
