@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
-import sgMail from '@sendgrid/mail';
+import { Resend } from 'resend';
 
-// Initialize SendGrid with API key
-sgMail.setApiKey(process.env.SENDGRID_API_KEY || '');
+// Resend の API キーを環境変数から取得
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
@@ -16,18 +16,19 @@ export async function POST(request: Request) {
       );
     }
 
-    const adminMsg = {
+    // 管理者への通知メール
+    const adminEmail = {
+      from: 'no-reply@yourdomain.com', // Resendではカスタムドメインなしでも可
       to: 'tsukurou0801@gmail.com',
-      from: 'noreply@tsucre.com', // Replace with your verified sender
       subject: 'New Newsletter Subscription',
       text: `New newsletter subscription: ${email}`,
-      html: `<p>New newsletter subscription: ${email}</p>`,
     };
 
-    const subscriberMsg = {
+    // ユーザーへの確認メール
+    const userEmail = {
+      from: 'no-reply@yourdomain.com',
       to: email,
-      from: 'noreply@tsucre.com',
-      subject: 'Welcome to TsuCre Newsletter',
+      subject: 'Welcome to TsuCre Newsletter!',
       text: `
 Thank you for subscribing to the TsuCre newsletter!
 - Latest product updates
@@ -50,14 +51,15 @@ The TsuCre Team
       `,
     };
 
+    // メール送信処理
     await Promise.all([
-      sgMail.send(adminMsg),
-      sgMail.send(subscriberMsg)
+      resend.emails.send(adminEmail),
+      resend.emails.send(userEmail)
     ]);
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error('SendGrid Error:', error);
+    console.error('Resend API Error:', error);
     return NextResponse.json(
       { error: 'Internal Server Error' },
       { status: 500 }
