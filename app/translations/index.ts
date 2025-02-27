@@ -32,46 +32,28 @@ export const translations = {
         title: 'Vision',
         text: 'すべての人が自分らしくクリエイティビティを発揮できる世界をツクレ',
       },
-      team: {
-        title: 'チーム紹介',
-        members: [
-          {
-            name: "大矢 結貴 (Yuki Oya)",
-            role: "ビジネスリーダー",
-            bio: "東北大学卒業後、京都大学大学院へ進学。コントローラーのカスタマイズ性を追求し、TsuCreを共同創業。",
-          },
-          {
-            name: "鴻 唯 (Yui Bishago)",
-            role: "開発リーダー",
-            bio: "東北大学工学部を卒業し、模擬人工衛星プロジェクトに参加した経験を経てTsuCreを共同創業。",
-          },
-        ],
-      },
-      achievements: {
-        title: '実績',
-        items: [
-          {
-            year: "2024",
-            title: "TOKIOテラス 学生ピッチコンテスト",
-            award: "優勝"
-          },
-          {
-            year: "2024",
-            title: "東北大学ビジネスアイデアコンテスト",
-            award: "最優秀賞・ものづくり部門賞"
-          },
-          {
-            year: "2024~2025",
-            title: "HAKOBUNE STARTUP CONTEST 3rd Batch",
-            award: "参加"
-          },
-        ],
-      },
     },
     home: {
       hero: {
         title: 'T2411',
         subtitle: 'プロの評価より、自分にとって最高のコントローラーを。',
+      },
+      features: {
+        title: '特徴',
+        items: [
+          {
+            title: '自分好みにカスタマイズ可能',
+            description: 'ボタンやスティック、外装を自由に交換でき、プレイスタイルや好みに合わせて選択できる。',
+          },
+          {
+            title: '簡単にパーツ交換ができる',
+            description: '独自に開発した内部構造により、特殊な工具なしで簡単にユーザーがパーツ交換ができる。',
+          },
+          {
+            title: '低コストで長く使える',
+            description: '破損しても交換パーツだけを買えば良いので、通常のコントローラーよりも長期間かつ低価格で使える。',
+          },
+        ],
       },
       newsletter: {
         placeholder: 'メールアドレスを入力',
@@ -79,27 +61,6 @@ export const translations = {
         validation: 'メールアドレスを入力してください',
         success: '登録が完了しました！',
         error: 'エラーが発生しました。しばらく経ってからお試しください。',
-      },
-    },
-    contact: {
-      title: 'お問い合わせ',
-      validation: 'すべての項目を入力してください',
-      success: 'お問い合わせを受け付けました。2営業日以内にご連絡いたします。',
-      error: 'エラーが発生しました。しばらく経ってからお試しください。',
-      form: {
-        name: {
-          label: 'お名前',
-          placeholder: '山田 太郎',
-        },
-        email: {
-          label: 'メールアドレス',
-          placeholder: 'your@email.com',
-        },
-        message: {
-          label: 'メッセージ',
-          placeholder: 'お問い合わせ内容をご記入ください',
-        },
-        submit: '送信する',
       },
     },
     footer: {
@@ -140,46 +101,28 @@ export const translations = {
         title: 'Vision',
         text: 'Creating a world where everyone can express their creativity in their own way',
       },
-      team: {
-        title: 'Our Team',
-        members: [
-          {
-            name: "Yuki Oya",
-            role: "Business Leader",
-            bio: "Graduated from Tohoku University and pursued graduate studies at Kyoto University. Co-founded TsuCre to enhance controller customization.",
-          },
-          {
-            name: "Yui Bishago",
-            role: "Development Leader",
-            bio: "Graduated from Tohoku University, participated in a mock satellite project, and co-founded TsuCre.",
-          },
-        ],
-      },
-      achievements: {
-        title: 'Achievements',
-        items: [
-          {
-            year: "2024",
-            title: "TOKIO Terrace Student Pitch Contest",
-            award: "Winner"
-          },
-          {
-            year: "2024",
-            title: "Tohoku University Business Idea Contest",
-            award: "Grand Prize & Manufacturing Division Award"
-          },
-          {
-            year: "2024~2025",
-            title: "HAKOBUNE STARTUP CONTEST 3rd Batch",
-            award: "Participant"
-          },
-        ],
-      },
     },
     home: {
       hero: {
         title: 'T2411',
         subtitle: 'Beyond pro standards, designed for you.',
+      },
+      features: {
+        title: 'Features',
+        items: [
+          {
+            title: 'Fully Customizable',
+            description: 'Freely interchange buttons, sticks, and exterior parts to match your playstyle and preferences.',
+          },
+          {
+            title: 'Easy Part Replacement',
+            description: 'Our unique internal structure allows users to easily replace parts without special tools.',
+          },
+          {
+            title: 'Cost-Effective Longevity',
+            description: 'Only replace damaged parts, making it more economical and longer-lasting than conventional controllers.',
+          },
+        ],
       },
       newsletter: {
         placeholder: 'Enter your email',
@@ -187,27 +130,6 @@ export const translations = {
         validation: 'Please enter your email address',
         success: 'Successfully subscribed!',
         error: 'An error occurred. Please try again later.',
-      },
-    },
-    contact: {
-      title: 'Contact Us',
-      validation: 'Please fill in all fields',
-      success: 'Thank you for your message. We will respond within 2 business days.',
-      error: 'An error occurred. Please try again later.',
-      form: {
-        name: {
-          label: 'Name',
-          placeholder: 'John Doe',
-        },
-        email: {
-          label: 'Email',
-          placeholder: 'your@email.com',
-        },
-        message: {
-          label: 'Message',
-          placeholder: 'Please enter your message',
-        },
-        submit: 'Send',
       },
     },
     footer: {
