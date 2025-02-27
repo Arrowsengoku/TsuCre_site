@@ -8,10 +8,14 @@ export const translations = {
       title: '私たちについて',
       intro: {
         text1: '私たちTsuCre(ツクレ)は京都大学と東北大学の大学院生が手を組んで始めたデバイスメーカーです。',
-        text2: '近年、スマートフォンやインターネットなどの発達によりソフトウェア領域で使用者に適したサービスが提供されるようになりました。これにより、私たちの生活はより便利になりました。ただ、これはソフトウェア領域だけであって、ハードウェアの領域ではまだ実現していません。',
-        text3: '私たちはこのような現状を変えるべく、まずは使用者ごとのニーズが全く異なるゲーミングデバイスの領域に挑戦することにしました。',
+        text2: '近年、スマートフォンやインターネットなどの発達によりソフトウェア領域で使用者に適したサービスが提供されるようになりました。しかし、ハードウェア領域ではまだ実現していません。',
+        text3: '私たちはこの状況を変えるため、まずは使用者ごとのニーズが異なるゲーミングデバイスの領域に挑戦することにしました。',
       },
-      credo: {  
+      vision: {
+        title: 'Vision',
+        text: 'すべての人が自分らしくクリエイティビティを発揮できる世界をツクレ',
+      },
+      credo: {
         title: 'Credo',
         items: [
           {
@@ -28,22 +32,38 @@ export const translations = {
           },
         ],
       },
-      vision: {
-        title: 'Vision',
-        text: 'すべての人が自分らしくクリエイティビティを発揮できる世界をツクレ',
-      },
       team: {
         title: 'チーム紹介',
         members: [
           {
-            name: '大矢 結貴',
-            role: 'ビジネスリーダー',
-            bio: '京都大学大学院在籍。ゲームを愛し、TsuCreの事業戦略を担当。',
+            name: "大矢 結貴(Yuki Oya)",
+            role: "ビジネスリーダー",
+            bio: "京都大学大学院情報学研究科在籍。4000時間以上コントローラーでゲームをする中で、TsuCreを共同創業。",
           },
           {
-            name: '鴻 唯',
-            role: '技術リーダー',
-            bio: '東北大学大学院在籍。デバイスの開発と技術戦略をリード。',
+            name: "鴻 唯(Yui Bishago)",
+            role: "開発リーダー",
+            bio: "東北大学大学院工学研究科在籍。CanSatプロジェクトの経験を活かし、TsuCreを共同創業。",
+          },
+        ],
+      },
+      achievements: {
+        title: '実績',
+        items: [
+          {
+            year: "2024",
+            title: "TOKIOテラス 学生ピッチコンテスト",
+            award: "優勝"
+          },
+          {
+            year: "2024",
+            title: "東北大学ビジネスアイデアコンテスト",
+            award: "最優秀賞・ものづくり部門賞"
+          },
+          {
+            year: "2025",
+            title: "Polar Bear Pitching TOKYO",
+            award: "2位"
           },
         ],
       },
@@ -58,15 +78,11 @@ export const translations = {
         items: [
           {
             title: '自分好みにカスタマイズ可能',
-            description: 'ボタンやスティック、外装を自由に交換でき、プレイスタイルや好みに合わせて選択できる。',
+            description: 'ボタンやスティック、外装を自由に交換できる。',
           },
           {
             title: '簡単にパーツ交換ができる',
-            description: '独自に開発した内部構造により、特殊な工具なしで簡単にユーザーがパーツ交換ができる。',
-          },
-          {
-            title: '低コストで長く使える',
-            description: '破損しても交換パーツだけを買えば良いので、通常のコントローラーよりも長期間かつ低価格で使える。',
+            description: '特殊な工具なしで簡単にパーツ交換が可能。',
           },
         ],
       },
@@ -78,9 +94,9 @@ export const translations = {
         error: 'エラーが発生しました。しばらく経ってからお試しください。',
       },
     },
-    footer: {
-      rights: '© 2025 TsuCre. All rights reserved.',
-      privacy: 'プライバシーポリシー',
+    privacy_policy: {
+      title: "プライバシーポリシー",
+      content: `株式会社TsuCre（以下、「当チーム」という。）は、ユーザーの個人情報について以下のとおりプライバシーポリシーを定めます。...`,
     },
   },
   en: {
@@ -92,8 +108,12 @@ export const translations = {
       title: 'About Us',
       intro: {
         text1: 'TsuCre is a device manufacturer founded by graduate students from Kyoto University and Tohoku University.',
-        text2: 'Recent advances in smartphones and internet technology have led to personalized software services that make our lives more convenient. However, this customization has not yet reached hardware.',
-        text3: 'To change this status quo, we\'ve chosen to start with gaming devices, where user needs vary significantly.',
+        text2: 'Recent advances in smartphones and the internet have led to personalized software services. However, this customization has not yet reached hardware.',
+        text3: 'To change this status quo, we chose to start with gaming devices, where user needs vary significantly.',
+      },
+      vision: {
+        title: 'Vision',
+        text: 'Creating a world where everyone can express their creativity in their own way',
       },
       credo: {
         title: 'Credo',
@@ -112,22 +132,38 @@ export const translations = {
           },
         ],
       },
-      vision: {
-        title: 'Vision',
-        text: 'Creating a world where everyone can express their creativity in their own way',
-      },
       team: {
         title: 'Our Team',
         members: [
           {
-            name: 'Yuki Oya',
-            role: 'Business Leader',
-            bio: 'Graduate student at Kyoto University. A gaming enthusiast leading the business strategy at TsuCre.',
+            name: "Yuki Oya",
+            role: "Business Leader",
+            bio: "Graduate student at Kyoto University. Co-founded TsuCre with a passion for gaming controllers after playing for over 4000 hours.",
           },
           {
-            name: 'Yui Bishago',
-            role: 'Technical Leader',
-            bio: 'Graduate student at Tohoku University. Leads device development and technical strategy.',
+            name: "Yui Bishago",
+            role: "Development Leader",
+            bio: "Graduate student at Tohoku University. Applied engineering experience from the CanSat project to co-found TsuCre.",
+          },
+        ],
+      },
+      achievements: {
+        title: 'Achievements',
+        items: [
+          {
+            year: "2024",
+            title: "TOKIO Terrace Student Pitch Contest",
+            award: "Winner"
+          },
+          {
+            year: "2024",
+            title: "Tohoku University Business Idea Contest",
+            award: "Grand Prize & Manufacturing Division Award"
+          },
+          {
+            year: "2025",
+            title: "Polar Bear Pitching TOKYO",
+            award: "2nd Place"
           },
         ],
       },
@@ -142,15 +178,11 @@ export const translations = {
         items: [
           {
             title: 'Fully Customizable',
-            description: 'Freely interchange buttons, sticks, and exterior parts to match your playstyle and preferences.',
+            description: 'Easily swap buttons, sticks, and exterior parts.',
           },
           {
             title: 'Easy Part Replacement',
-            description: 'Our unique internal structure allows users to easily replace parts without special tools.',
-          },
-          {
-            title: 'Cost-Effective Longevity',
-            description: 'Only replace damaged parts, making it more economical and longer-lasting than conventional controllers.',
+            description: 'Replace parts without specialized tools.',
           },
         ],
       },
@@ -162,9 +194,10 @@ export const translations = {
         error: 'An error occurred. Please try again later.',
       },
     },
-    footer: {
-      rights: '© 2025 TsuCre. All rights reserved.',
-      privacy: 'Privacy Policy',
+    privacy_policy: {
+      title: "Privacy Policy",
+      content: `TsuCre, Inc. (hereinafter referred to as "the Team") establishes this privacy policy regarding the handling of users' personal information. ...`,
     },
   },
 };
+
