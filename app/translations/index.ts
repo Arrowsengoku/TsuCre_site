@@ -11,6 +11,23 @@ export const translations = {
         text2: '近年、スマートフォンやインターネットなどの発達によりソフトウェア領域で使用者に適したサービスが提供されるようになりました。これにより、私たちの生活はより便利になりました。ただ、これはソフトウェア領域だけであって、ハードウェアの領域ではまだ実現していません。',
         text3: '私たちはこのような現状を変えるべく、まずは使用者ごとのニーズが全く異なるゲーミングデバイスの領域に挑戦することにしました。',
       },
+       credo: {  
+        title: 'Credo',
+        items: [
+          {
+            title: 'Create what you want',
+            description: '自分が欲しいと思うものを創造しよう。',
+          },
+          {
+            title: 'Be crazy',
+            description: '常識に囚われることなく、大胆に行動しよう。',
+          },
+          {
+            title: 'Done is better than perfect',
+            description: '完璧を求めすぎず、まず行動することが大切。',
+          },
+        ],
+      },
       vision: {
         title: 'Vision',
         text: 'すべての人が自分らしくクリエイティビティを発揮できる世界をツクレ',
