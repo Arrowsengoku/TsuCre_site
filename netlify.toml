@@ -33,3 +33,6 @@
     Content-Security-Policy = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.unsplash.com; img-src 'self' data: *.unsplash.com; font-src 'self' data:;"
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+[functions]
+node_bundler = "esbuild"
+
