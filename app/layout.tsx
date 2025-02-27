@@ -24,7 +24,6 @@ export default function RootLayout({
     <html lang="ja" className={inter.className}>
       <head>
         {/* Preload critical assets */}
-        <link rel="preload" href="/logo.png" as="image" />
         <link rel="preconnect" href="https://images.unsplash.com" />
       </head>
       <body suppressHydrationWarning>
