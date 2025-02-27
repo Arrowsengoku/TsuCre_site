@@ -159,5 +159,5 @@ Users can request disclosure, correction, or deletion of their personal data by 
 TsuCre Inquiry Desk  
       `,
     },
-  },
+  
 };
