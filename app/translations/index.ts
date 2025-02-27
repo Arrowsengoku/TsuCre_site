@@ -1,7 +1,7 @@
 export const translations = {
   ja: {
     nav: {
-      about: 'About',
+      about: '私たちについて',
       contact: 'お問い合わせ',
     },
     about: {
@@ -19,7 +19,7 @@ export const translations = {
     home: {
       hero: {
         title: 'T2411',
-      subtitle: 'プロの評価より、自分にとって最高のコントローラーを。',
+        subtitle: 'プロの評価より、自分にとって最高のコントローラーを。',
       },
       benefits: [
         '最新情報の先行公開',
@@ -32,31 +32,6 @@ export const translations = {
         validation: 'メールアドレスを入力してください',
         success: '登録が完了しました！',
         error: 'エラーが発生しました。しばらく経ってからお試しください。',
-      },
-      features: {
-        title: '特徴',
-        items: [
-          {
-            title: '自分好みにカスタマイズ可能',
-            description: 'ボタンやスティック、外装を自由に交換でき、プレイスタイルや好みに合わせて選択できる。',
-          },
-          {
-            title: '簡単にパーツ交換ができる',
-            description: '独自に開発した内部構造により、特殊な工具なしで簡単にユーザーがパーツ交換ができる',
-          },
-          {
-            title: '低コストで長く使える',
-            description: '破損しても交換パーツだけを買えば良いので、通常のコントローラーよりも長期間かつ低価格で使える',
-          },
-        ],
-      },
-      testimonials: {
-        title: 'ユーザーの声',
-        stats: '96人中74%のユーザーが「欲しい」と回答',
-      },
-      cta: {
-        title: 'T2411の最新情報を最速でゲットしよう',
-        description: '限定モニター募集やアップデート情報をいち早くお届けします',
       },
     },
     privacy_policy: {
@@ -79,19 +54,6 @@ export const translations = {
 - 利用規約違反の特定、不正利用の防止  
 - 有料プラン利用者への利用料金の請求  
 
-4. **個人データの安全管理措置**  
-当チームは、個人情報の正確性を保ち、不正アクセスや漏えいを防止するため、従業員教育および定期的な管理を行います。
-
-5. **個人データの第三者提供**  
-以下の場合を除き、当チームは第三者に個人情報を提供しません。  
-- 法令に基づく場合  
-- 生命・財産の保護が必要な場合  
-- 公衆衛生向上のため特に必要な場合  
-- 国の機関が法令の定める事務を遂行するために必要な場合  
-
-6. **匿名加工情報の取扱い**  
-当チームは、匿名加工情報を法令に基づき適切に管理します。
-
 7. **個人データの開示・訂正**  
 開示・訂正・削除を希望する場合は、以下の住所へご連絡ください。  
 
@@ -106,11 +68,6 @@ TsuCre お問い合わせ窓口
       about: 'About',
       contact: 'Contact',
     },
-    home: {
-      hero: {
-        title: 'T2411',
-        subtitle: 'Beyond pro standards, designed for you.',
-      },
     about: {
       title: 'About Us',
       intro: {
@@ -123,6 +80,11 @@ TsuCre お問い合わせ窓口
         text: 'Creating a world where everyone can express their creativity in their own way',
       },
     },
+    home: {
+      hero: {
+        title: 'T2411',
+        subtitle: 'Beyond pro standards, designed for you.',
+      },
       benefits: [
         'Early access to latest updates',
         'Prototype tester applications',
@@ -156,19 +118,6 @@ When users submit inquiries through our contact form and registering email addre
 - Identifying users who violate our terms of service or engage in fraudulent activities  
 - Billing users who subscribe to paid plans  
 
-4. **Measures for Secure Management of Personal Data**  
-We take measures to ensure the accuracy of personal information and prevent unauthorized access or data leakage through employee training and periodic management reviews.
-
-5. **Provision of Personal Data to Third Parties**  
-We will not provide personal information to third parties except in the following cases:  
-- When required by law  
-- When necessary to protect a person's life, property, or well-being  
-- When essential for public health or child welfare  
-- When required for government agencies to perform legal duties  
-
-6. **Handling of Anonymized Information**  
-We process anonymized data following legal standards and take appropriate safety measures.
-
 7. **Disclosure and Correction of Retained Personal Data**  
 Users can request disclosure, correction, or deletion of their personal data by contacting our inquiry desk.
 
@@ -179,4 +128,3 @@ TsuCre Inquiry Desk
     },
   },
 };
-
