@@ -71,7 +71,63 @@ export const translations = {
           },
         ],
       },
+      team: {
+        title: 'チーム紹介',
+        members: [
+          {
+            name: "大矢 結貴(Yuki Oya)",
+            role: "ビジネスリーダー",
+            bio: "京都大学大学院情報学研究科在籍。4000時間以上コントローラーでゲームをし、TsuCreを共同創業。",
+          },
+          {
+            name: "鴻 唯(Yui Bishago)",
+            role: "開発リーダー",
+            bio: "東北大学大学院工学研究科在籍。CanSatプロジェクト経験を活かし、TsuCreを共同創業。",
+          },
+        ],
+      },
+      achievements: {
+        title: '実績',
+        items: [
+          {
+            year: "2024",
+            title: "TOKIOテラス 学生ピッチコンテスト",
+            award: "優勝"
+          },
+          {
+            year: "2024",
+            title: "東北大学ビジネスアイデアコンテスト",
+            award: "最優秀賞・ものづくり部門賞"
+          },
+          {
+            year: "2024~2025",
+            title: "HAKOBUNE STARTUP CONTEST 3rd Batch",
+            award: "参加"
+          },
+          {
+            year: "2025",
+            title: "Polar Bear Pitching TOKYO",
+            award: "2位"
+          },
+          {
+            year: "2025",
+            title: "TOHOKU STARTUP BIOTOPE PITH DAY",
+            award: "登壇"
+          },
+          {
+            year: "2025",
+            title: "Delight Pitch(DeNA、Delight Ventures共催)",
+            award: "登壇"
+          },
+          {
+            year: "2025",
+            title: "Hult Prize on campus contest(Tohoku University) ",
+            award: "2位"
+          },
+        ],
+      },
     },
+    
     privacy_policy: {
       title: "プライバシーポリシー",
       content: `
@@ -236,7 +292,13 @@ cookieとは、WebサーバーからWebブラウザに送信されるデータ�
         title: 'Achievements',
         items: [
           { year: "2024", title: "TOKIO Terrace Student Pitch Contest", award: "Winner" },
+          {year: "2024",title: "Tohoku University Business Idea Contest",award: "Grand Prize & Manufacturing Division Award"},
+          {year: "2024~2025",title: "HAKOBUNE STARTUP CONTEST 3rd Batch",award: "Participant"},
+          {year: "2025", title: "TOHOKU STARTUP BIOTOPE PITH DAY",award: "Presenter"},
           { year: "2025", title: "Polar Bear Pitching TOKYO", award: "2nd Place" },
+          {year: "2025",title: "Delight Pitch(DeNA、Delight Ventures)",award: "Presenter"},
+          {year: "2025",title: "Hult Prize on campus contest(Tohoku University) ",award: "2nd Place"
+          },
         ],
       },
     },
