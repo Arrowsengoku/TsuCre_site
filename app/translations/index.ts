@@ -213,6 +213,27 @@ cookieとは、WebサーバーからWebブラウザに送信されるデータ�
 当チームWebサイトへのリンクは、自由に設置していただいて構いません。ただし、Webサイトの内容等によってはリンク設置をお断りすることがあります。
       `,
     },
+     contact: {
+      title: 'お問い合わせ',
+      validation: 'すべての項目を入力してください',
+      success: 'お問い合わせを受け付けました。2営業日以内にご連絡いたします。',
+      error: 'エラーが発生しました。しばらく経ってからお試しください。',
+      form: {
+        name: {
+          label: 'お名前',
+          placeholder: '山田 太郎',
+        },
+        email: {
+          label: 'メールアドレス',
+          placeholder: 'your@email.com',
+        },
+        message: {
+          label: 'メッセージ',
+          placeholder: 'お問い合わせ内容をご記入ください',
+        },
+        submit: '送信する',
+      },
+    },
     footer: {
       rights: '© 2025 TsuCre. All rights reserved.',
       privacy: 'プライバシーポリシー',
@@ -390,6 +411,27 @@ Users are free to link to our website. However, we may refuse link requests depe
 405 Yamato Building, 1-6-16 Kanda-Izumicho, Chiyoda-ku, Tokyo  
 TsuCre Inquiry Desk  
       `,
+    },
+     contact: {
+      title: 'Contact Us',
+      validation: 'Please fill in all fields',
+      success: 'Thank you for your message. We will respond within 2 business days.',
+      error: 'An error occurred. Please try again later.',
+      form: {
+        name: {
+          label: 'Name',
+          placeholder: 'John Doe',
+        },
+        email: {
+          label: 'Email',
+          placeholder: 'your@email.com',
+        },
+        message: {
+          label: 'Message',
+          placeholder: 'Please enter your message',
+        },
+        submit: 'Send',
+      },
     },
     footer: {
       rights: '© 2025 TsuCre. All rights reserved.',
