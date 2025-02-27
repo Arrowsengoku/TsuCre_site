@@ -32,6 +32,21 @@ export const translations = {
         title: 'Vision',
         text: 'すべての人が自分らしくクリエイティビティを発揮できる世界をツクレ',
       },
+      team: {
+        title: 'チーム紹介',
+        members: [
+          {
+            name: '大矢 結貴',
+            role: 'ビジネスリーダー',
+            bio: '京都大学大学院在籍。ゲームを愛し、TsuCreの事業戦略を担当。',
+          },
+          {
+            name: '鴻 唯',
+            role: '技術リーダー',
+            bio: '東北大学大学院在籍。デバイスの開発と技術戦略をリード。',
+          },
+        ],
+      },
     },
     home: {
       hero: {
@@ -100,6 +115,21 @@ export const translations = {
       vision: {
         title: 'Vision',
         text: 'Creating a world where everyone can express their creativity in their own way',
+      },
+      team: {
+        title: 'Our Team',
+        members: [
+          {
+            name: 'Yuki Oya',
+            role: 'Business Leader',
+            bio: 'Graduate student at Kyoto University. A gaming enthusiast leading the business strategy at TsuCre.',
+          },
+          {
+            name: 'Yui Bishago',
+            role: 'Technical Leader',
+            bio: 'Graduate student at Tohoku University. Leads device development and technical strategy.',
+          },
+        ],
       },
     },
     home: {
