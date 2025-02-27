@@ -8,7 +8,6 @@ import { translations } from "@/app/translations";
 export default function About() {
   const { language } = useLanguageStore();
   const t = translations[language];
-  console.log("チームメンバー:", t.about.team.members);
 
   return (
     <div className="min-h-screen bg-black text-white">
