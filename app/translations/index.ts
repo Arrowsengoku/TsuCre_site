@@ -4,6 +4,18 @@ export const translations = {
       about: 'About',
       contact: 'お問い合わせ',
     },
+    about: {
+      title: '私たちについて',
+      intro: {
+        text1: '私たちTsuCre(ツクレ)は京都大学と東北大学の大学院生が手を組んで始めたデバイスメーカーです。',
+        text2: '近年、スマートフォンやインターネットなどの発達によりソフトウェア領域で使用者に適したサービスが提供されるようになりました。これにより、私たちの生活はより便利になりました。ただ、これはソフトウェア領域だけであって、ハードウェアの領域ではまだ実現していません。',
+        text3: '私たちはこのような現状を変えるべく、まずは使用者ごとのニーズが全く異なるゲーミングデバイスの領域に挑戦することにしました。',
+      },
+      vision: {
+        title: 'Vision',
+        text: 'すべての人が自分らしくクリエイティビティを発揮できる世界をツクレ',
+      },
+    },
     home: {
       hero: {
         title: 'T2411',
@@ -99,6 +111,18 @@ TsuCre お問い合わせ窓口
         title: 'T2411',
         subtitle: 'Beyond pro standards, designed for you.',
       },
+    about: {
+      title: 'About Us',
+      intro: {
+        text1: 'TsuCre is a device manufacturer founded by graduate students from Kyoto University and Tohoku University.',
+        text2: 'Recent advances in smartphones and internet technology have led to personalized software services that make our lives more convenient. However, this customization has not yet reached hardware.',
+        text3: 'To change this status quo, we\'ve chosen to start with gaming devices, where user needs vary significantly.',
+      },
+      vision: {
+        title: 'Vision',
+        text: 'Creating a world where everyone can express their creativity in their own way',
+      },
+    },
       benefits: [
         'Early access to latest updates',
         'Prototype tester applications',
