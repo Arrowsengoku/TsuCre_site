@@ -113,7 +113,7 @@ export default function Home() {
               className="text-center"
             >
               <Image
-                src="public/controller.PNG"
+                src="/controller.PNG"
                 alt="T2411 Controller"
                 width={1200}
                 height={675}
