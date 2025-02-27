@@ -132,7 +132,7 @@ export const translations = {
       },
     },
     
-    privacy_policy: {
+    privacy: {
       title: "プライバシーポリシー",
       content: `
 TsuCre（以下、「当チーム」という。）は，ユーザーの個人情報について以下のとおりプライバシーポリシー（以下、「本ポリシー」という。）を定めます。本ポリシーは、当社がどのような個人情報を取得し、どのように利用・共有するか、ユーザーがどのようにご自身の個人情報を管理できるかをご説明するものです。
@@ -331,7 +331,7 @@ cookieとは、WebサーバーからWebブラウザに送信されるデータ�
         ],
       },
     },
-    privacy_policy: {
+    privacy: {
       title: "Privacy Policy",
       content: `
 TsuCre (hereinafter referred to as "the Team") establishes the following privacy policy (hereinafter referred to as "this Policy") regarding the handling of users' personal information. This Policy explains what personal information we collect, how we use and share it, and how users can manage their own personal information.
