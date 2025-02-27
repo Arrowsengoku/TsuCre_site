@@ -2,8 +2,7 @@
 const nextConfig = {
   output: 'export',
   images: { 
-    unoptimized: true,
-    domains: ['images.unsplash.com']
+    unoptimized: true, // Netlifyでは next/image の最適化を無効化
   },
   // Enable optimization features
   compress: true,
@@ -14,14 +13,7 @@ const nextConfig = {
   webpack: (config) => {
     config.cache = false;
     return config;
-  }
-};
-
-module.exports = {
-  swcMinify: false, // Disable SWC minification
-};
-
-module.exports = {
+  },
   async rewrites() {
     return [
       {
@@ -31,3 +23,5 @@ module.exports = {
     ];
   },
 };
+
+module.exports = nextConfig;
