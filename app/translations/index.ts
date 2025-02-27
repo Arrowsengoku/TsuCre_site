@@ -152,22 +152,72 @@ export const translations = {
         submit: '送信する',
       },
     },
-    privacy: {
-      title: 'プライバシーポリシー',
-      sections: {
-        intro: 'TsuCre（以下、「当チーム」という。）は，ユーザーの個人情報について以下のとおりプライバシーポリシー（以下、「本ポリシー」という。）を定めます。',
-        companyInfo: {
-          title: '事業者情報',
-          content: [
-            '名前：TsuCre(ツクレ)',
-            '住所：東京都千代田区神田和泉町1番地6-16ヤマトビル405',
-            '代表者：大矢結貴',
-          ],
-        },
-      },
+    privacy_policy: {
+      title: "プライバシーポリシー",
+      content: `
+TsuCre（以下、「当チーム」という。）は、ユーザーの個人情報について以下のとおりプライバシーポリシー（以下、「本ポリシー」という。）を定めます。本ポリシーは、当社がどのような個人情報を取得し、どのように利用・共有するか、ユーザーがどのようにご自身の個人情報を管理できるかをご説明するものです。
+
+## 1. 基本情報
+**チーム名**: TsuCre  
+**住所**: 東京都千代田区神田和泉町1番地6-16ヤマトビル405  
+**代表者**: 大矢結貴  
+
+## 2. 個人情報の取得方法
+当チームは、お問い合わせフォームの送信時に氏名・会社名・電話番号・メールアドレスを取得いたします。
+
+## 3. 個人情報の利用目的
+取得した個人情報は以下の目的で使用いたします。
+- ユーザーが利用しているサービスの新機能や更新情報、キャンペーン情報をメールでご案内するため
+- ユーザーが利用しているサービスのメンテナンスなど、必要に応じたご連絡をするため
+- ユーザーからのお問い合わせに回答するため
+- 利用規約違反の特定、その他不正利用防止のため
+- 有料プラン利用者への利用料金の請求のため
+
+## 4. 個人データを安全に管理するための措置
+当社は、個人情報の正確性を保ち、不正アクセスや漏えいを防止するため、従業員教育および定期的な管理を行います。
+
+## 5. 個人データの第三者提供について
+当社は以下の場合を除き、第三者に個人情報を提供することはありません。
+- 法令に基づく場合
+- 人の生命・財産の保護のために必要な場合
+- 公衆衛生向上のため特に必要な場合
+- 国の機関が法令の定める事務を遂行するため必要な場合
+
+## 6. 匿名加工情報の取扱い
+当社は、匿名加工情報の適切な管理・安全対策を実施し、法令に基づき取り扱います。
+
+## 7. 保有個人データの開示・訂正
+本人から開示・訂正・削除の請求を受けた場合、適切に対応いたします。詳細は下記お問い合わせ窓口へご連絡ください。
+
+**送付先住所**:  
+〒101-0024 東京都千代田区神田和泉町1番地6-16ヤマトビル405  
+TsuCre お問い合わせ窓口  
+
+## 8. 個人情報取扱いに関する相談や苦情の連絡先
+当チームWebサイトのお問い合わせフォームよりご連絡ください。
+
+## 9. SSL（Secure Socket Layer）について
+当チームのWebサイトはSSLを使用し、個人情報の暗号化通信を行っています。
+
+## 10. Cookieについて
+当チームWebサイトではCookieを使用し、効率的な利用をサポートします。Cookieは個人情報を含みません。
+
+## 11. プライバシーポリシーの制定日及び改定日
+**制定**: 2025年2月27日  
+
+## 12. 免責事項
+当チームWebサイトの情報を使用した結果生じた損害について、当社は一切の責任を負いません。
+
+## 13. 著作権・肖像権
+当チームWebサイト内のコンテンツの無断使用・転用は禁止されています。
+
+## 14. リンクについて
+当チームWebサイトへのリンクは自由ですが、内容によりリンクをお断りする場合があります。
+      `,
+    },
     },
     footer: {
-      rights: '© 2024 TsuCre. All rights reserved.',
+      rights: '© 2025 TsuCre. All rights reserved.',
       privacy: 'プライバシーポリシー',
     },
   },
@@ -324,22 +374,73 @@ export const translations = {
         submit: 'Send',
       },
     },
-    privacy: {
-      title: 'Privacy Policy',
-      sections: {
-        intro: 'TsuCre (hereinafter referred to as "the Team") establishes the following privacy policy (hereinafter referred to as "this Policy") regarding user personal information.',
-        companyInfo: {
-          title: 'Company Information',
-          content: [
-            'Name: TsuCre',
-            'Address: Yamato Building 405, 1-6-16 Kanda-Izumicho, Chiyoda-ku, Tokyo',
-            'Representative: Yuki Oya',
-          ],
-        },
-      },
+    privacy_policy: {
+      title: "Privacy Policy",
+      content: `
+TsuCre, Inc. (hereinafter referred to as "the Team") establishes this privacy policy ("the Policy") regarding the handling of users' personal information. The Policy explains what personal information we collect, how we use and share it, and how users can manage their personal information.
+
+## 1. Basic Information
+**Team Name**: TsuCre  
+**Address**: 405 Yamato Building, 1-6-16 Kanda-Izumicho, Chiyoda-ku, Tokyo  
+**Representative**: Yuki Oya  
+
+## 2. Methods of Collecting Personal Information
+When users submit inquiries through our contact form, we collect their name, company name, phone number, and email address.
+
+## 3. Purpose of Use of Personal Information
+Collected personal information is used for the following purposes:
+- Sending notifications about new features, updates, and promotional campaigns
+- Contacting users regarding maintenance and necessary communications
+- Responding to user inquiries
+- Identifying users who violate our terms of service or engage in fraudulent activities
+- Billing users who subscribe to paid plans
+
+## 4. Measures for Secure Management of Personal Data
+We take measures to ensure the accuracy of personal information and prevent unauthorized access or data leakage through employee training and periodic management reviews.
+
+## 5. Provision of Personal Data to Third Parties
+We will not provide personal information to third parties except in the following cases:
+- When required by law
+- When necessary to protect a person's life, property, or well-being
+- When essential for public health or child welfare
+- When required for government agencies to perform legal duties
+
+## 6. Handling of Anonymized Information
+We process anonymized data following legal standards and take appropriate safety measures.
+
+## 7. Disclosure and Correction of Retained Personal Data
+Users can request disclosure, correction, or deletion of their personal data by contacting our inquiry desk.
+
+**Contact Address**:  
+405 Yamato Building, 1-6-16 Kanda-Izumicho, Chiyoda-ku, Tokyo  
+TsuCre Inquiry Desk  
+
+## 8. Contact for Personal Data Handling Concerns
+For inquiries regarding our privacy practices, please contact us via our website.
+
+## 9. SSL (Secure Socket Layer)
+Our website uses SSL encryption to secure the transmission of personal data.
+
+## 10. About Cookies
+We use cookies to improve the efficiency of our website usage. Cookies do not contain personally identifiable information.
+
+## 11. Policy Effective and Revision Dates
+**Effective Date**: February 27, 2025  
+
+## 12. Disclaimer
+We are not responsible for damages resulting from the use of information on our website.
+
+## 13. Copyrights and Image Rights
+Unauthorized use or reproduction of the content on our website is prohibited.
+
+## 14. Links
+Links to our website are permitted but may be declined depending on content.
+      `,
+    },
+  },
     },
     footer: {
-      rights: '© 2024 TsuCre. All rights reserved.',
+      rights: '© 2025 TsuCre. All rights reserved.',
       privacy: 'Privacy Policy',
     },
   },
