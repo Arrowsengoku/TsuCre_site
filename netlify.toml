@@ -1,6 +1,8 @@
 [build]
   command = "npm run build"
   publish = ".next"
+  cache = [".next/cache", "node_modules/.cache"]
+
 
 # Handle client-side routing
 [[redirects]]
