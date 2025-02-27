@@ -11,7 +11,7 @@ export const translations = {
         text2: '近年、スマートフォンやインターネットなどの発達によりソフトウェア領域で使用者に適したサービスが提供されるようになりました。これにより、私たちの生活はより便利になりました。ただ、これはソフトウェア領域だけであって、ハードウェアの領域ではまだ実現していません。',
         text3: '私たちはこのような現状を変えるべく、まずは使用者ごとのニーズが全く異なるゲーミングデバイスの領域に挑戦することにしました。',
       },
-       credo: {  
+      credo: {  
         title: 'Credo',
         items: [
           {
@@ -92,11 +92,7 @@ TsuCre お問い合わせ窓口
         text2: 'Recent advances in smartphones and internet technology have led to personalized software services that make our lives more convenient. However, this customization has not yet reached hardware.',
         text3: 'To change this status quo, we\'ve chosen to start with gaming devices, where user needs vary significantly.',
       },
-      vision: {
-        title: 'Vision',
-        text: 'Creating a world where everyone can express their creativity in their own way',
-      },
-      credo:{
+      credo: {
         title: 'Credo',
         items: [
           {
@@ -112,6 +108,11 @@ TsuCre お問い合わせ窓口
             description: 'Take action instead of seeking perfection.',
           },
         ],
+      },
+      vision: {
+        title: 'Vision',
+        text: 'Creating a world where everyone can express their creativity in their own way',
+      },
     },
     home: {
       hero: {
@@ -159,5 +160,6 @@ Users can request disclosure, correction, or deletion of their personal data by 
 TsuCre Inquiry Desk  
       `,
     },
-  
+  },
 };
+
