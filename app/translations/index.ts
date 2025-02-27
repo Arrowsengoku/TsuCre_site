@@ -42,6 +42,10 @@ export const translations = {
         title: 'ユーザーの声',
         stats: '96人中74%のユーザーが「欲しい」と回答',
       },
+      cta: {
+        title: "T2411の最新情報を最速でゲットしよう",
+        description: "限定モニター募集やアップデート情報をいち早くお届けします",
+      },
     },
     about: {
       title: '私たちについて',
@@ -281,6 +285,10 @@ cookieとは、WebサーバーからWebブラウザに送信されるデータ�
       testimonials: {
         title: 'User Feedback',
         stats: '74% of 96 users said "I want this"',
+      },
+       cta: {
+        title: "Get the Latest T2411 Updates First",
+        description: "Be the first to know about limited tester opportunities and updates",
       },
     },
     about: {
