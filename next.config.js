@@ -7,7 +7,6 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
-  swcMinify: false, // Disable SWC minification to avoid compilation issues
   // Simplified webpack config to avoid caching issues
   webpack: (config) => {
     config.cache = false;
