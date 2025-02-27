@@ -47,64 +47,16 @@ export const translations = {
           },
         ],
       },
-      achievements: {
-        title: '実績',
-        items: [
-          {
-            year: "2024",
-            title: "TOKIOテラス 学生ピッチコンテスト",
-            award: "優勝"
-          },
-          {
-            year: "2024",
-            title: "東北大学ビジネスアイデアコンテスト",
-            award: "最優秀賞・ものづくり部門賞"
-          },
-          {
-            year: "2024~2025",
-            title: "HAKOBUNE STARTUP CONTEST 3rd Batch",
-            award: "参加"
-          },
-          {
-            year: "2025",
-            title: "TOHOKU STARTUP BIOTOPE PITCH DAY",
-            award: "登壇"
-          },
-          {
-            year: "2025",
-            title: "Polar Bear Pitching TOKYO",
-            award: "2位"
-          },
-          {
-            year: "2025",
-            title: "Delight Pitch (DeNA & Delight Ventures)",
-            award: "登壇"
-          },
-          {
-            year: "2025",
-            title: "Hult Prize On Campus Contest (Tohoku University)",
-            award: "2位"
-          }
-        ],
-      },
     },
     home: {
       hero: {
         title: 'T2411',
         subtitle: 'プロの評価より、自分にとって最高のコントローラーを。',
       },
-      benefits: [
-        '最新情報の先行公開',
-        '試作品テスターへの応募',
-        '限定イベントへの参加',
-      ],
-      newsletter: {
-        placeholder: 'メールアドレスを入力',
-        button: '登録する',
-        validation: 'メールアドレスを入力してください',
-        success: '登録が完了しました！',
-        error: 'エラーが発生しました。しばらく経ってからお試しください。',
-      },
+    },
+    footer: {
+      rights: '© 2025 TsuCre. All rights reserved.',
+      privacy: 'プライバシーポリシー',
     },
   },
   en: {
@@ -155,65 +107,18 @@ export const translations = {
           },
         ],
       },
-      achievements: {
-        title: 'Achievements',
-        items: [
-          {
-            year: "2024",
-            title: "TOKIO Terrace Student Pitch Contest",
-            award: "Winner"
-          },
-          {
-            year: "2024",
-            title: "Tohoku University Business Idea Contest",
-            award: "Grand Prize & Manufacturing Division Award"
-          },
-          {
-            year: "2024~2025",
-            title: "HAKOBUNE STARTUP CONTEST 3rd Batch",
-            award: "Participant"
-          },
-          {
-            year: "2025",
-            title: "TOHOKU STARTUP BIOTOPE PITCH DAY",
-            award: "Presenter"
-          },
-          {
-            year: "2025",
-            title: "Polar Bear Pitching TOKYO",
-            award: "2nd Place"
-          },
-          {
-            year: "2025",
-            title: "Delight Pitch (DeNA & Delight Ventures)",
-            award: "Presenter"
-          },
-          {
-            year: "2025",
-            title: "Hult Prize On Campus Contest (Tohoku University)",
-            award: "2nd Place"
-          }
-        ],
-      },
     },
     home: {
       hero: {
         title: 'T2411',
         subtitle: 'Beyond pro standards, designed for you.',
       },
-      benefits: [
-        'Early access to latest updates',
-        'Prototype tester applications',
-        'Exclusive event participation',
-      ],
-      newsletter: {
-        placeholder: 'Enter your email',
-        button: 'Subscribe',
-        validation: 'Please enter your email address',
-        success: 'Successfully subscribed!',
-        error: 'An error occurred. Please try again later.',
-      },
+    },
+    footer: {
+      rights: '© 2025 TsuCre. All rights reserved.',
+      privacy: 'Privacy Policy',
     },
   },
 };
+
 
