@@ -113,10 +113,11 @@ export default function Home() {
               className="text-center"
             >
               <Image
-                src="/controller.PNG"
+                src="/images/controller.png" 
                 alt="T2411 Controller"
                 width={1200}
                 height={675}
+                priority
                 className="rounded-lg shadow-2xl mb-8"
               />
             </motion.div>
