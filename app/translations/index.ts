@@ -32,6 +32,21 @@ export const translations = {
         title: 'Vision',
         text: 'すべての人が自分らしくクリエイティビティを発揮できる世界をツクレ',
       },
+      team: {
+        title: 'チーム紹介',
+        members: [
+          {
+            name: "大矢 結貴 (Yuki Oya)",
+            role: "ビジネスリーダー",
+            bio: "東北大学卒業後、京都大学大学院へ進学。コントローラーのカスタマイズ性を追求し、TsuCreを共同創業。",
+          },
+          {
+            name: "鴻 唯 (Yui Bishago)",
+            role: "開発リーダー",
+            bio: "東北大学工学部を卒業し、模擬人工衛星プロジェクトに参加した経験を経てTsuCreを共同創業。",
+          },
+        ],
+      },
     },
     home: {
       hero: {
@@ -50,34 +65,6 @@ export const translations = {
         success: '登録が完了しました！',
         error: 'エラーが発生しました。しばらく経ってからお試しください。',
       },
-    },
-    privacy_policy: {
-      title: "プライバシーポリシー",
-      content: `
-株式会社TsuCre（以下、「当チーム」という。）は、ユーザーの個人情報について以下のとおりプライバシーポリシー（以下、「本ポリシー」という。）を定めます。
-
-1. **基本情報**  
-**チーム名**: TsuCre  
-**住所**: 東京都千代田区神田和泉町1番地6-16ヤマトビル405  
-**代表者**: 大矢結貴  
-
-2. **個人情報の取得方法**  
-当チームは、メールアドレス登録とお問い合わせフォームの送信時に氏名・会社名・電話番号・メールアドレスを取得いたします。
-
-3. **個人情報の利用目的**  
-- サービスの新機能や更新情報、キャンペーン情報のご案内  
-- サービスのメンテナンスなど、必要に応じたご連絡  
-- お問い合わせへの回答  
-- 利用規約違反の特定、不正利用の防止  
-- 有料プラン利用者への利用料金の請求  
-
-7. **個人データの開示・訂正**  
-開示・訂正・削除を希望する場合は、以下の住所へご連絡ください。  
-
-**送付先**:  
-〒101-0024 東京都千代田区神田和泉町1番地6-16ヤマトビル405  
-TsuCre お問い合わせ窓口  
-      `,
     },
   },
   en: {
@@ -113,6 +100,21 @@ TsuCre お問い合わせ窓口
         title: 'Vision',
         text: 'Creating a world where everyone can express their creativity in their own way',
       },
+      team: {
+        title: 'Our Team',
+        members: [
+          {
+            name: "Yuki Oya",
+            role: "Business Leader",
+            bio: "Graduated from Tohoku University and pursued graduate studies at Kyoto University. Co-founded TsuCre to enhance controller customization.",
+          },
+          {
+            name: "Yui Bishago",
+            role: "Development Leader",
+            bio: "Graduated from Tohoku University, participated in a mock satellite project, and co-founded TsuCre.",
+          },
+        ],
+      },
     },
     home: {
       hero: {
@@ -132,34 +134,5 @@ TsuCre お問い合わせ窓口
         error: 'An error occurred. Please try again later.',
       },
     },
-    privacy_policy: {
-      title: "Privacy Policy",
-      content: `
-TsuCre, Inc. (hereinafter referred to as "the Team") establishes this privacy policy ("the Policy") regarding the handling of users' personal information.
-
-1. **Basic Information**  
-**Team Name**: TsuCre  
-**Address**: 405 Yamato Building, 1-6-16 Kanda-Izumicho, Chiyoda-ku, Tokyo  
-**Representative**: Yuki Oya  
-
-2. **Methods of Collecting Personal Information**  
-When users submit inquiries through our contact form and registering email address, we collect their name, company name, phone number, and email address.
-
-3. **Purpose of Use of Personal Information**  
-- Notifying users about new features, updates, and promotions  
-- Contacting users for maintenance and necessary communications  
-- Responding to user inquiries  
-- Identifying users who violate our terms of service or engage in fraudulent activities  
-- Billing users who subscribe to paid plans  
-
-7. **Disclosure and Correction of Retained Personal Data**  
-Users can request disclosure, correction, or deletion of their personal data by contacting our inquiry desk.
-
-**Contact Address**:  
-405 Yamato Building, 1-6-16 Kanda-Izumicho, Chiyoda-ku, Tokyo  
-TsuCre Inquiry Desk  
-      `,
-    },
   },
 };
-
