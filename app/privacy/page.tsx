@@ -22,26 +22,37 @@ export default function Privacy() {
             {t.privacy.title}
           </h1>
 
-          {/* イントロ */}
+          {/* イントロ (文字列なので直接表示) */}
           <p>{t.privacy.sections.intro}</p>
 
           {/* 各セクションをループで表示 */}
           {Object.entries(t.privacy.sections)
             .filter(([key]) => key !== "intro") // introはすでに表示済みなので除外
-            .map(([key, section]) => (
-              <section key={key} className="mb-8">
-                <h2 className="text-xl font-semibold">{section.title}</h2>
-                {Array.isArray(section.content) ? (
-                  <ul className="list-disc pl-6">
-                    {section.content.map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p>{section.content}</p>
-                )}
-              </section>
-            ))}
+            .map(([key, section]) => {
+              if (typeof section === "string") {
+                // セクションが単一の文字列の場合はそのまま表示
+                return (
+                  <section key={key} className="mb-8">
+                    <p>{section}</p>
+                  </section>
+                );
+              } else {
+                return (
+                  <section key={key} className="mb-8">
+                    <h2 className="text-xl font-semibold">{section.title}</h2>
+                    {Array.isArray(section.content) ? (
+                      <ul className="list-disc pl-6">
+                        {section.content.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>{section.content}</p>
+                    )}
+                  </section>
+                );
+              }
+            })}
         </motion.div>
       </div>
     </div>
