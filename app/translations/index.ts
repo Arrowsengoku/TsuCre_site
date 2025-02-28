@@ -313,7 +313,7 @@ export const translations = {
       team: {
         title: 'Our Team',
         members: [
-          { name: "Yuki Oya", role: "Business Leader", bio: "After graduating from the Faculty of Engineering at Tohoku University, he entered the Graduate School of Informatics at Kyoto University. Having spent over 4,000 hours playing games, I wanted to create a controller that offers more freedom and can be used for a long time, so I co-founded TsuCre." },
+          { name: "Yuki Oya", role: "Business Leader", bio: "After graduating from the Faculty of Engineering at Tohoku University, entered the Graduate School of Informatics at Kyoto University. Having spent over 4,000 hours playing games, he wanted to create a controller that offers more freedom and can be used for a long time, so he co-founded TsuCre." },
           { name: "Yui Bishago", role: "Development Leader", bio: "After graduating from Tohoku University Faculty of Engineering, entered Tohoku University Graduate School of Engineering. Co-founded TsuCre by leveraging his experience at the CanSat World Championship (ARLISS)." },
         ],
       },
