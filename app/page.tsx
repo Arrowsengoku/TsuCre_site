@@ -10,6 +10,22 @@ import Image from 'next/image';
 import { useLanguageStore } from "@/app/store/language";
 import { translations } from "@/app/translations";
 import CircularProgress from "@/app/components/circular-progress";
+import { NextResponse } from "next/server";
+export async function POST(req: Request) {
+  try {
+    const { email } = await req.json();
+
+    if (!email) {
+      return NextResponse.json({ error: "Email is required" }, { status: 400 });
+    }
+
+    console.log("Received email:", email);
+
+    return NextResponse.json({ message: "Successfully subscribed!" }, { status: 200 });
+  } catch (error) {
+    return NextResponse.json({ error: "Server error" }, { status: 500 });
+  }
+}
 
 export default function Home() {
   const { language } = useLanguageStore();
