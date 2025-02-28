@@ -15,6 +15,8 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+    // ここで、メールの保存処理や外部API連携を行う
+    console.log("Received email:", email);
 
     // 管理者（あなた）へ通知メール
     const adminMsg = {
