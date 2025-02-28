@@ -134,88 +134,88 @@ export const translations = {
     
     privacy: {
       title: "プライバシーポリシー",
-      content: `
-TsuCre（以下、「当チーム」という。）は，ユーザーの個人情報について以下のとおりプライバシーポリシー（以下、「本ポリシー」という。）を定めます。本ポリシーは、当社がどのような個人情報を取得し、どのように利用・共有するか、ユーザーがどのようにご自身の個人情報を管理できるかをご説明するものです。
+      sections: {
+        intro: "TsuCre（以下、「当チーム」という。）は、ユーザーの個人情報について以下のとおりプライバシーポリシー（以下、「本ポリシー」という。）を定めます。本ポリシーは、当社がどのような個人情報を取得し、どのように利用・共有するか、ユーザーがどのようにご自身の個人情報を管理できるかをご説明するものです。",
+    　　 companyInfo: {
+         title: "基本情報",
+         content: [
+           "名前：TsuCre",
+           "住所：東京都千代田区神田和泉町1番地6-16ヤマトビル405",
+           "代表者：大矢結貴"
+         ],
+       },
+        dataCollection: {
+          title: "個人情報の取得方法",
+          content: "当チームは、メールアドレス登録やお問い合わせフォームの送信時に氏名・会社名・電話番号・メールアドレスを取得します。",
+        },
+        dataUsage: {
+          title: "個人情報の利用目的",
+          content: [
+            "取得した個人情報は以下の目的で使用いたします。,
+"ユーザーが利用しているサービスの新機能や更新情報、キャンペーン情報などをメール送付によりご案内するため",
+"ユーザーが利用しているサービスのメンテナンスなど、必要に応じたご連絡をするため",
+"ユーザーからのコメントやお問い合わせに回答するため",
+"利用規約に違反したユーザーの特定、その他不正不当な目的でサービスを利用したユーザーの特定をし、ご利用をお断りするため",
+"有料プランを利用しているユーザーに対して利用料金をご請求するため",
+"個人情報の利用目的は、変更前後の関連性について合理性が認められる場合に限って変更するものとします。",
+"個人情報の利用目的について変更を行った際は、変更後の目的について所定の方法によってユーザーに通知し、加えてWebサイト上にも公表するものとします。"
+      ],
+    },
+            dataSecurity: {
+              title: "個人データを安全に管理するための措置",
+              content: "当チームは、個人情報の正確性を保ち、不正アクセス・漏えい防止のため、従業員教育や定期的な管理を実施しています。",
+    },
+        dataSharing: {
+      title: "個人データの第三者提供",
+      content: [
+        "法令に基づく場合",
+        "人の生命・身体・財産の保護のため必要な場合",
+        "公衆衛生向上や児童の健全育成のため必要な場合",
+        "国の機関が法令に基づく事務を遂行するために必要な場合",
+        "ユーザーの同意がある場合"
+      ],
+    },
+         anonymousData: {
+      title: "匿名加工情報の取扱い",
+      content: "当チームは、法令に基づき適正な加工を施し、安全管理措置を講じた上で匿名加工情報を取り扱います。",
+    },
+    dataAccess: {
+      title: "個人データの開示・訂正",
+      content: "当チームは、ユーザー本人からの開示・訂正・削除等の請求に対応します。",
+    },
+    contactInfo: {
+      title: "お問い合わせ窓口",
+      content: [
+        "送付先住所: 〒101-0024 東京都千代田区神田和泉町1番地6-16ヤマトビル405",
+        "TsuCre お問い合わせ窓口"
+      ],
+    },
+    sslSecurity: {
+      title: "SSL（Secure Socket Layer）について",
+      content: "当チームのWebサイトはSSLに対応しており、ユーザーの個人情報を暗号化して通信を保護します。",
+    },
+    cookies: {
+      title: "Cookieについて",
+      content: "当チームのWebサイトはCookieを使用しています。ユーザーはブラウザ設定で無効にできます。",
+    },
+    policyRevision: {
+      title: "プライバシーポリシーの制定日及び改定日",
+      content: "制定日: 2025年2月27日",
+    },
+    disclaimer: {
+      title: "免責事項",
+      content: "当チームは、Webサイトの情報に関する一切の責任を負いません。",
+    },
+    copyright: {
+      title: "著作権・肖像権",
+      content: "当チームのWebサイト内のコンテンツは著作権・肖像権で保護されています。",
+    },
+    links: {
+      title: "リンク",
+      content: "当チームのWebサイトへのリンクは自由ですが、内容によってはお断りする場合があります。",
+    },
+      },
 
-１．基本情報
-名前：TsuCre
-住所：東京都千代田区神田和泉町1番地6-16ヤマトビル405
-代表者：大矢結貴
-
-２．個人情報の取得方法
-当チームは、お問い合わせフォームの送信時には、氏名・会社名・電話番号・メールアドレスを取得させていただきます。
-
-３．個人情報の利用目的
-
-取得した個人情報は以下の目的で使用いたします。
-ユーザーが利用しているサービスの新機能や更新情報、キャンペーン情報などをメール送付によりご案内するため
-ユーザーが利用しているサービスのメンテナンスなど、必要に応じたご連絡をするため
-ユーザーからのコメントやお問い合わせに回答するため
-利用規約に違反したユーザーの特定、その他不正不当な目的でサービスを利用したユーザーの特定をし、ご利用をお断りするため
-有料プランを利用しているユーザーに対して利用料金をご請求するため
-個人情報の利用目的は、変更前後の関連性について合理性が認められる場合に限って変更するものとします。
-個人情報の利用目的について変更を行った際は、変更後の目的について当社所定の方法によってユーザーに通知し、加えてWebサイト上にも公表するものとします。
-
-４．個人データを安全に管理するための措置
-当チームは、個人情報を正確かつ最新の内容に保つよう努め、不正なアクセス・改ざん・漏えい・滅失及び毀損から保護するため全従業員及び役員に対して教育研修を実施しています。また、個人情報保護規定を設け、現場での管理についても定期的な点検を行っています。
-
-5．個人データの第三者提供について
-当社は以下の場合を除き、同意を得ないで第三者に個人情報を提供することは致しません。
-法令に基づく場合
-人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき
-公衆衛生の向上又は児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難であるとき
-国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき
-次に掲げる事項をあらかじめ本人に通知または公表し、かつ当社が個人情報保護委員会に届出をしたとき
-第三者への提供を利用目的とすること
-第三者に提供される個人データの項目
-第三者への提供の方法
-本人の求めに応じて当該個人情報の第三者への提供を停止すること
-本人の求めを受け付ける方法
-
-6．匿名加工情報に関する取扱い
-当チームは、匿名加工情報（特定の個人を識別できないよう加工した個人情報であって、復元ができないようにしたもの）を作成する場合、以下の対応を行います。
-法令で定める基準に従い適正な加工を施す
-法令で定める基準に従い安全管理措置を講じる
-匿名加工情報に含まれる個人に関する情報の項目を公表する
-作成元となった個人情報の本人を識別するため、他の情報と照合すること
-
-7．保有個人データの開示、訂正
-当チームは、本人から個人情報の開示を求められたときには、遅滞なく本人に対しこれを開示します。個人情報の利用目的の通知や訂正、追加、削除、利用の停止、第三者への提供の停止を希望される方は、以下の手続きに従ってご請求ください。
-
-以下の書類等をお問い合わせ窓口宛てにご郵送願います。
-
-保有個人データ開示等請求書
-本人確認書類の写し（運転免許証、個人番号カード、在留カード、特別永住者証明書、パスポートなどの顔写真付き証明書）
-手数料（事務手数料として1請求につき500円）
-送付先住所
-〒101-0024
-東京都千代田区神田和泉町1番地6-16ヤマトビル405
-TsuCre　お問い合わせ窓口
-
-９．個人情報取扱いに関する相談や苦情の連絡先
-当チームの個人情報の取扱いに関するご質問やご不明点、苦情、その他のお問い合わせはお問い合わせフォームよりご連絡ください。
-
-１０．SSL（Secure Socket Layer）について
-当チームのWebサイトはSSLに対応しており、WebブラウザとWebサーバーとの通信を暗号化しています。ユーザーが入力する氏名や住所、電話番号などの個人情報は自動的に暗号化されます。
-
-１１．cookieについて
-cookieとは、WebサーバーからWebブラウザに送信されるデータのことです。Webサーバーがcookieを参照することでユーザーのパソコンを識別でき、効率的に当社Webサイトを利用することができます。当社Webサイトがcookieとして送るファイルは、個人を特定するような情報を含んでおりません。
-お使いのWebブラウザの設定により、cookieを無効にすることも可能です。
-
-１２．プライバシーポリシーの制定日及び改定日
-制定：2025年2月27日
-
-１３．免責事項
-
-当チームWebサイトに掲載されている情報の正確さには万全を期していますが、利用者が当チームWebサイトの情報を用いて行う一切の行為に関して、当チームは一切の責任を負わないものとします。
-当チームは、利用者が当社Webサイトを利用したことにより生じた利用者の損害及び利用者が第三者に与えた損害に関して、一切の責任を負わないものとします。
-
-１４．著作権・肖像権
-当チームWebサイト内の文章や画像、すべてのコンテンツは著作権・肖像権等により保護されており、無断での使用や転用は禁止されています。
-
-１５．リンク
-当チームWebサイトへのリンクは、自由に設置していただいて構いません。ただし、Webサイトの内容等によってはリンク設置をお断りすることがあります。
-      `,
     },
      contact: {
       title: 'お問い合わせ',
@@ -332,94 +332,86 @@ cookieとは、WebサーバーからWebブラウザに送信されるデータ�
       },
     },
     privacy: {
-      title: "Privacy Policy",
-      content: `
-TsuCre (hereinafter referred to as "the Team") establishes the following privacy policy (hereinafter referred to as "this Policy") regarding the handling of users' personal information. This Policy explains what personal information we collect, how we use and share it, and how users can manage their own personal information.
-
-1. **Basic Information**  
-**Name**: TsuCre  
-**Address**: 405 Yamato Building, 1-6-16 Kanda-Izumicho, Chiyoda-ku, Tokyo, Japan  
-**Representative**: Yuki Oya  
-
-2. **Methods of Collecting Personal Information**  
-The Team collects users' personal information, including their name, company name, phone number, and email address, when they submit an inquiry via the contact form.
-
-3. **Purpose of Use of Personal Information**  
-
-The collected personal information will be used for the following purposes:  
-- To send emails notifying users about new features, updates, and promotional campaigns for the services they are using.  
-- To contact users when necessary, such as for maintenance of the services they are using.  
-- To respond to comments or inquiries from users.  
-- To identify users who have violated the Terms of Service and prevent improper or fraudulent use of our services.  
-- To charge users who have subscribed to paid plans.  
-
-The purpose of use of personal information will only be changed if there is a reasonable relationship between the new and old purposes.  
-If we change the purpose of use, we will notify users using the method designated by our company and also publicly announce the new purpose on our website.  
-
-4. **Measures for Secure Management of Personal Data**  
-The Team strives to maintain the accuracy and up-to-date nature of personal information, and implements education and training for all employees and officers to protect against unauthorized access, tampering, leakage, loss, and damage.  
-Additionally, we have established internal regulations for personal information protection and conduct regular inspections to ensure proper management at the operational level.  
-
-5. **Provision of Personal Data to Third Parties**  
-Except in the following cases, the Team will not provide users' personal information to third parties without their consent:  
-- When required by law.  
-- When necessary to protect a person's life, body, or property and obtaining the individual's consent is difficult.  
-- When particularly necessary for improving public health or promoting the sound growth of children, and obtaining the individual's consent is difficult.  
-- When it is necessary to cooperate with national or local government agencies or their contractors in carrying out legally prescribed duties, and obtaining the individual's consent may interfere with the execution of those duties.  
-- When we have notified the individual or publicly announced in advance, and submitted a report to the Personal Information Protection Commission, regarding the following matters:  
-  - That the purpose of providing personal information to third parties is for use by those third parties.  
-  - The items of personal data provided to third parties.  
-  - The method of provision to third parties.  
-  - That users may request us to stop providing their personal information to third parties.  
-  - The method by which users can make such a request.  
-
-6. **Handling of Anonymized Information**  
-When creating anonymized information (personal information that has been processed so that specific individuals cannot be identified and cannot be restored), the Team will:  
-- Perform proper processing according to legally prescribed standards.  
-- Take safety management measures in accordance with legally prescribed standards.  
-- Publicly announce the categories of personal information included in the anonymized information.  
-- Prohibit any attempts to identify individuals from the anonymized information by cross-referencing it with other data.  
-
-7. **Disclosure and Correction of Retained Personal Data**  
-When requested by an individual to disclose their personal information, we will respond without delay.  
-If users wish to be notified of the purpose of use of their personal information, request corrections, additions, deletions, suspension of use, or suspension of provision to third parties, they must follow the procedures below.  
-
-The following documents must be mailed to our inquiry desk:  
-- Request Form for Disclosure of Retained Personal Data  
-- A copy of identity verification documents (driver’s license, individual number card, residence card, special permanent resident certificate, passport, or other photo identification)  
-- A handling fee (500 yen per request as an administrative fee)  
-
-**Mailing Address**  
-405 Yamato Building, 1-6-16 Kanda-Izumicho, Chiyoda-ku, Tokyo, Japan  
-TsuCre Inquiry Desk  
-
-8. **Contact for Personal Data Inquiries and Complaints**  
-For any questions, concerns, complaints, or other inquiries regarding the handling of personal information, please contact us via the inquiry form on our website.  
-
-9. **SSL (Secure Socket Layer)**  
-The Team's website supports SSL encryption, securing communications between web browsers and web servers. Personal information such as names, addresses, and phone numbers entered by users is automatically encrypted.  
-
-10. **Cookies**  
-Cookies are data sent from a web server to a web browser. Web servers can identify users' devices by referring to cookies, making it more efficient to use our website. The cookies used by our website do not contain personally identifiable information.  
-Users can disable cookies in their web browser settings.  
-
-11. **Enactment and Revision Date of Privacy Policy**  
-Enacted: February 27, 2025  
-
-12. **Disclaimer**  
-While we take every precaution to ensure the accuracy of the information on our website, the Team assumes no responsibility for any actions taken by users based on the information provided on our website.  
-The Team is not responsible for any damages incurred by users or damages caused by users to third parties due to the use of our website.  
-
-13. **Copyrights and Image Rights**  
-All text, images, and content on our website are protected by copyright and image rights. Unauthorized use or reproduction is strictly prohibited.  
-
-14. **Links**  
-Users are free to link to our website. However, we may refuse link requests depending on the content of the linking website.  
-**Contact Address**:  
-405 Yamato Building, 1-6-16 Kanda-Izumicho, Chiyoda-ku, Tokyo  
-TsuCre Inquiry Desk  
-      `,
+  title: "Privacy Policy",
+  sections: {
+    intro: "TsuCre (hereinafter referred to as 'the Team') establishes the following privacy policy ('this Policy') regarding the handling of users' personal information. This Policy explains what personal information we collect, how we use and share it, and how users can manage their own personal information.",
+    companyInfo: {
+      title: "Basic Information",
+      content: [
+        "Name: TsuCre",
+        "Address: 405 Yamato Building, 1-6-16 Kanda-Izumicho, Chiyoda-ku, Tokyo, Japan",
+        "Representative: Yuki Oya"
+      ],
     },
+    dataCollection: {
+      title: "Methods of Collecting Personal Information",
+      content: "The Team collects users' personal information, including their name, company name, phone number, and email address, when they submit an inquiry via the contact form.",
+    },
+    dataUsage: {
+      title: "Purpose of Use of Personal Information",
+      content: [
+        "To send emails notifying users about new features, updates, and promotional campaigns.",
+        "To contact users regarding maintenance of services.",
+        "To respond to user inquiries.",
+        "To identify and prevent fraudulent use.",
+        "To bill users for paid plans."
+      ],
+    },
+    dataSecurity: {
+      title: "Measures for Secure Management of Personal Data",
+      content: "The Team ensures data accuracy and prevents unauthorized access, leakage, and damage through employee training and regular security audits.",
+    },
+    dataSharing: {
+      title: "Provision of Personal Data to Third Parties",
+      content: [
+        "When required by law.",
+        "When necessary to protect life, body, or property.",
+        "When necessary to improve public health or promote children's healthy development.",
+        "When required by national or local government agencies for legal duties.",
+        "With user consent."
+      ],
+    },
+    anonymousData: {
+      title: "Handling of Anonymized Information",
+      content: "The Team processes anonymized information under legal standards and ensures data security management.",
+    },
+    dataAccess: {
+      title: "Disclosure and Correction of Retained Personal Data",
+      content: "Users may request disclosure, correction, or deletion of their personal information.",
+    },
+    contactInfo: {
+      title: "Inquiry Contact",
+      content: [
+        "Mailing Address: 405 Yamato Building, 1-6-16 Kanda-Izumicho, Chiyoda-ku, Tokyo, Japan",
+        "TsuCre Inquiry Desk"
+      ],
+    },
+    sslSecurity: {
+      title: "SSL (Secure Socket Layer)",
+      content: "The Team's website supports SSL encryption, ensuring the protection of users' personal data.",
+    },
+    cookies: {
+      title: "Cookies",
+      content: "Our website uses cookies. Users can disable cookies in their browser settings.",
+    },
+    policyRevision: {
+      title: "Enactment and Revision Date of Privacy Policy",
+      content: "Enacted: February 27, 2025",
+    },
+    disclaimer: {
+      title: "Disclaimer",
+      content: "The Team assumes no responsibility for any actions taken by users based on the information provided on the website.",
+    },
+    copyright: {
+      title: "Copyrights and Image Rights",
+      content: "All content on our website is protected by copyright and image rights. Unauthorized use is prohibited.",
+    },
+    links: {
+      title: "Links",
+      content: "Users are free to link to our website, but we may refuse links depending on the content of the linking site.",
+    },
+  },
+},
      contact: {
       title: 'Contact Us',
       validation: 'Please fill in all fields',
