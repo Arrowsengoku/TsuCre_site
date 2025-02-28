@@ -29,7 +29,7 @@ export default function Home() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email: userEmail }),
+        body: JSON.stringify({ email: email }),
       });
 
       if (!response.ok) throw new Error('API error');
