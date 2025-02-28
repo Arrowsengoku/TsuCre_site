@@ -71,7 +71,7 @@ export const translations = {
           },
           {
             title: 'Done is better than perfect',
-            description: '完璧を求めすぎず、まず行動することが大切。',
+            description: '完璧を求めすぎず、まず行動することが大切である。',
           },
         ],
       },
@@ -81,12 +81,12 @@ export const translations = {
           {
             name: "大矢 結貴(Yuki Oya)",
             role: "ビジネスリーダー",
-            bio: "京都大学大学院情報学研究科在籍。4000時間以上コントローラーでゲームをし、TsuCreを共同創業。",
+            bio: "東北大学工学部卒業後、京都大学大学院情報学研究科に進学。4000時間以上ゲームをしている中でもっと自由度が高く、長く続けられるコントローラーを作りたいと思い、TsuCreを共同創業。",
           },
           {
             name: "鴻 唯(Yui Bishago)",
             role: "開発リーダー",
-            bio: "東北大学大学院工学研究科在籍。CanSatプロジェクト経験を活かし、TsuCreを共同創業。",
+            bio: "東北大学工学部卒業後、東北大学大学院工学研究科に進学。CanSatの世界大会(ARLISS)での経験を活かし、TsuCreを共同創業。",
           },
         ],
       },
@@ -313,8 +313,8 @@ export const translations = {
       team: {
         title: 'Our Team',
         members: [
-          { name: "Yuki Oya", role: "Business Leader", bio: "4000+ hours of gaming experience led him to co-found TsuCre." },
-          { name: "Yui Bishago", role: "Development Leader", bio: "Applied satellite development skills to create gaming devices." },
+          { name: "Yuki Oya", role: "Business Leader", bio: "After graduating from the Faculty of Engineering at Tohoku University, he entered the Graduate School of Informatics at Kyoto University. Having spent over 4,000 hours playing games, I wanted to create a controller that offers more freedom and can be used for a long time, so I co-founded TsuCre." },
+          { name: "Yui Bishago", role: "Development Leader", bio: "After graduating from Tohoku University Faculty of Engineering, entered Tohoku University Graduate School of Engineering. Co-founded TsuCre by leveraging his experience at the CanSat World Championship (ARLISS)." },
         ],
       },
       achievements: {
