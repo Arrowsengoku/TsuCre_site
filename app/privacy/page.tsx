@@ -17,20 +17,31 @@ export default function Privacy() {
           transition={{ duration: 0.8 }}
           className="prose prose-invert max-w-3xl mx-auto"
         >
+          {/* プライバシーポリシーのタイトル */}
           <h1 className="text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
             {t.privacy.title}
           </h1>
+
+          {/* イントロ */}
           <p>{t.privacy.sections.intro}</p>
-          <section className="mb-8">
-            <h2>{t.privacy.sections.companyInfo.title}</h2>
-            <ul>
-              {t.privacy.sections.companyInfo.content.map(
-                (item, index) => (
-                  <li key={index}>{item}</li>
-                )
-              )}
-            </ul>
-          </section>
+
+          {/* 各セクションをループで表示 */}
+          {Object.entries(t.privacy.sections)
+            .filter(([key]) => key !== "intro") // introはすでに表示済みなので除外
+            .map(([key, section]) => (
+              <section key={key} className="mb-8">
+                <h2 className="text-xl font-semibold">{section.title}</h2>
+                {Array.isArray(section.content) ? (
+                  <ul className="list-disc pl-6">
+                    {section.content.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{section.content}</p>
+                )}
+              </section>
+            ))}
         </motion.div>
       </div>
     </div>
