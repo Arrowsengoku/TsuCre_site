@@ -18,13 +18,13 @@ export default function Privacy() {
           className="prose prose-invert max-w-3xl mx-auto"
         >
           <h1 className="text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
-            {t.privacy_policy.title}
+            {t.privacy.title}
           </h1>
-          <p>{t.privacy_policy.sections.intro}</p>
+          <p>{t.privacy.sections.intro}</p>
           <section className="mb-8">
-            <h2>{t.privacy_policy.sections.companyInfo.title}</h2>
+            <h2>{t.privacy.sections.companyInfo.title}</h2>
             <ul>
-              {t.privacy_policy.sections.companyInfo.content.split("\n").map(
+              {t.privacy.sections.companyInfo.content.split("\n").map(
                 (item, index) => (
                   <li key={index}>{item}</li>
                 )
