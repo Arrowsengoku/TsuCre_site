@@ -3,14 +3,13 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     appDir: true, // App Routerを使用していることを明示
+    esmExternals: false, // モジュールの解決を調整
+  },
   output: 'export',
   images: {
     unoptimized: true,
   },
-  experimental: {
-    esmExternals: false, // モジュールの解決を調整
-  },
-    async rewrites() {
+  async rewrites() {
     return [
       {
         source: "/api/:path*",
