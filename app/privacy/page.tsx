@@ -24,7 +24,7 @@ export default function Privacy() {
           <section className="mb-8">
             <h2>{t.privacy.sections.companyInfo.title}</h2>
             <ul>
-              {t.privacy.sections.companyInfo.content.split("\n").map(
+              {t.privacy.sections.companyInfo.content.map(
                 (item, index) => (
                   <li key={index}>{item}</li>
                 )
