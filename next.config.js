@@ -2,10 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    appDir: true, // App Routerを使用していることを明示
     esmExternals: false, // モジュールの解決を調整
   },
-  output: 'export',
   images: {
     unoptimized: true,
   },
