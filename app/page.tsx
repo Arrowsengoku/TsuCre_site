@@ -104,38 +104,29 @@ export default function Home() {
       </section>
 
 {/* Product Video Section */}
-'use client';
-
-import { motion } from 'framer-motion';
-
-export default function Page() {
-  return (
-    <section className="py-20 bg-black">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <video
-              src="https://drive.google.com/file/d/1aRXmAxJmvueEMKoyE4i1MGQEqw_12w3j/view?usp=drive_link" // ⭐ 外部動画URL
-              controls // 再生・停止ボタン
-              autoPlay={false} // 自動再生しない（必要に応じてtrue）
-              loop // ループ（必要に応じて）
-              muted // ミュート（自動再生するなら基本必須）
-              playsInline // スマホ対応
-              className="rounded-lg shadow-2xl mx-auto mb-8 max-w-full h-auto"
-            >
-              お使いのブラウザは video タグをサポートしていません。
-            </video>
-          </motion.div>
+<section className="py-20 bg-black">
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-center"
+      >
+        <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 Aspect Ratio */ }}>
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
+            src="https://www.youtube.com/embed/あなたの動画ID"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
         </div>
-      </div>
-    </section>
-  );
-}
+      </motion.div>
+    </div>
+  </div>
+</section>
 
 
 
