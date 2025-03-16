@@ -119,7 +119,7 @@ export default function Home() {
           height="315"
           src="https://www.youtube.com/embed/XPApVaUN-Ec?si=EO9-fFJZN7MDlwub"
           title="YouTube video player"
-          rameBorder="0"  
+          frameBorder="0"  
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin" 
           allowFullScreen 
