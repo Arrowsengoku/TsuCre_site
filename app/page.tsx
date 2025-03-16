@@ -116,7 +116,8 @@ export default function Home() {
         <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 Aspect Ratio */ }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
-            src="https://drive.google.com/file/d/1aRXmAxJmvueEMKoyE4i1MGQEqw_12w3j/view?usp=drive_link"
+            src="https://drive.google.com/uc?export=download&id=1aRXmAxJmvueEMKoyE4i1MGQEqw_12w3j"
+
             title="Dirve video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
