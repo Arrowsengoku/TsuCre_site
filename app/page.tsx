@@ -104,9 +104,9 @@ export default function Home() {
       </section>
 
 {/* Product Video Section */}
-<section className="py-20 bg-black">
+<section className="min-h-screen flex items-center justify-center bg-black">
   <div className="container mx-auto px-4">
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
