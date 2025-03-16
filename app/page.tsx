@@ -103,28 +103,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product Image Section */}
-      <section className="py-20 bg-black">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center"
-            >
-              <Image
-                src="./controller.png" 
-                alt="T2411 Controller"
-                width={1200}
-                height={675}
-                priority
-                className="rounded-lg shadow-2xl mb-8"
-              />
-            </motion.div>
-          </div>
+{/* Product Video Section */}
+<section className="py-20 bg-black">
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-center"
+      >
+        <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 Aspect Ratio */ }}>
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
+            src="https://youtu.be/XPApVaUN-Ec"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
         </div>
-      </section>
+      </motion.div>
+    </div>
+  </div>
+</section>
+
 
       {/* Features Section */}
       <section className="py-20 bg-gradient-to-b from-black to-gray-900">
