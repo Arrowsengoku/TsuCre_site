@@ -113,20 +113,22 @@ export default function Home() {
         transition={{ duration: 0.8 }}
         className="text-center"
       >
-        <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 Aspect Ratio */ }}>
-          <iframe
-            className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
-            src="https://youtu.be/XPApVaUN-Ec"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-        </div>
+        <video
+          src="/videos/T2411_pv.mp4" // 動画ファイルのパス
+          controls // 再生・一時停止などの操作UIを表示
+          autoPlay={false} // 自動再生させない（必要に応じてtrueに変更可）
+          loop // ループ再生（任意）
+          muted // ミュート（任意）
+          playsInline // iOSなどでインライン再生を許可
+          className="rounded-lg shadow-2xl mx-auto mb-8 max-w-full h-auto"
+        >
+          お使いのブラウザは video タグをサポートしていません。
+        </video>
       </motion.div>
     </div>
   </div>
 </section>
+
 
 
       {/* Features Section */}
