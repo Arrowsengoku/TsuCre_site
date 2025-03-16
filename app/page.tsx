@@ -123,7 +123,7 @@ export default function Home() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin" 
           allowFullScreen 
-          className="rounded-lg shadow-2xl"
+          className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
           ></iframe>
 
         </div>
