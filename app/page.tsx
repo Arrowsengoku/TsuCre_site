@@ -114,7 +114,18 @@ export default function Home() {
         className="text-center"
       >
         <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 Aspect Ratio */ }}>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/XPApVaUN-Ec?si=EO9-fFJZN7MDlwub" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/XPApVaUN-Ec?si=EO9-fFJZN7MDlwub"
+          title="YouTube video player"
+          rameBorder="0"  
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin" 
+          allowFullScreen 
+          className="rounded-lg shadow-2xl"
+          ></iframe>
+
         </div>
       </motion.div>
     </div>
